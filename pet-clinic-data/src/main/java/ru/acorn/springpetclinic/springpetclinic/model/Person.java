@@ -1,6 +1,6 @@
 package ru.acorn.springpetclinic.springpetclinic.model;
 
-public class Person {
+public class Person extends BaseEntity {
     private String firstName;
     private String secondName;
 
