@@ -1,4 +1,4 @@
-package ru.acorn.springpetclinic.model;
+package ru.acorn.springpetclinic.springpetclinic.model;
 
 public class PetType {
     private String name;

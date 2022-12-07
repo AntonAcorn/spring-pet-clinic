@@ -1,4 +1,4 @@
-package ru.acorn.springpetclinic.model;
+package ru.acorn.springpetclinic.springpetclinic.model;
 
 import java.time.LocalDateTime;
 
