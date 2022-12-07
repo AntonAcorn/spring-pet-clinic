@@ -50,7 +50,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:AntonAcorn/spring-pet-clinic.git</developerConnection>
-
+      <tag>spring-pet-clinic-0.0.1</tag>
   </scm>
 
 </project>
