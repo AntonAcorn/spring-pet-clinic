@@ -1,11 +1,21 @@
 package ru.acorn.springpetclinic.springpetclinic.model;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Pet extends BaseEntity {
+
+    private String name;
     private PetType petType;
     private Owner owner;
-    private LocalDateTime birthDate;
+    private LocalDate birthDate;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public PetType getPetType() {
         return petType;
@@ -23,11 +33,11 @@ public class Pet extends BaseEntity {
         this.owner = owner;
     }
 
-    public LocalDateTime getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(LocalDateTime birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 }
