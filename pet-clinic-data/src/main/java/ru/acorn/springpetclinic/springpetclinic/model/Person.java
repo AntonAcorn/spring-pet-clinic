@@ -2,7 +2,7 @@ package ru.acorn.springpetclinic.springpetclinic.model;
 
 public class Person extends BaseEntity {
     private String firstName;
-    private String secondName;
+    private String lastName;
 
     public String getFirstName() {
         return firstName;
@@ -12,11 +12,11 @@ public class Person extends BaseEntity {
         this.firstName = firstName;
     }
 
-    public String getSecondName() {
-        return secondName;
+    public String getLastNameName() {
+        return lastName;
     }
 
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
+    public void setLastName(String secondName) {
+        this.lastName = secondName;
     }
 }

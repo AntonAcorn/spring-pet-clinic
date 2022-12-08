@@ -1,11 +1,11 @@
 package ru.acorn.springpetclinic.springpetclinic.services.map;
 
 import ru.acorn.springpetclinic.springpetclinic.model.Pet;
-import ru.acorn.springpetclinic.springpetclinic.services.CrudService;
+import ru.acorn.springpetclinic.springpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService <Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService <Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
