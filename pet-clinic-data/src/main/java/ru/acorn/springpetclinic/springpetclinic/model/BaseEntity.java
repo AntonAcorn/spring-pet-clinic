@@ -7,7 +7,7 @@ import jakarta.persistence.MappedSuperclass;
 
 import java.io.Serializable;
 
-@MappedSuperclass
+@MappedSuperclass//не будет создаваться колонка
 public class BaseEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
