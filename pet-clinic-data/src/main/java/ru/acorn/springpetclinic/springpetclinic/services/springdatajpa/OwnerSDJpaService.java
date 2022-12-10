@@ -1,8 +1,6 @@
 package ru.acorn.springpetclinic.springpetclinic.services.springdatajpa;
 
-import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 import ru.acorn.springpetclinic.springpetclinic.model.Owner;
 import ru.acorn.springpetclinic.springpetclinic.repositories.OwnerRepository;
@@ -15,12 +13,12 @@ import java.util.Set;
 
 @Service
 @Profile("springdatajpa")
-public class OwnerSDJpsService implements OwnerService {
+public class OwnerSDJpaService implements OwnerService {
     private final OwnerRepository ownerRepository;
     private final PetRepository petRepository;
     private final PetTypeRepository petTypeRepository;
 
-    public OwnerSDJpsService(OwnerRepository ownerRepository, PetRepository petRepository,
+    public OwnerSDJpaService(OwnerRepository ownerRepository, PetRepository petRepository,
                              PetTypeRepository petTypeRepository) {
         this.ownerRepository = ownerRepository;
         this.petRepository = petRepository;
