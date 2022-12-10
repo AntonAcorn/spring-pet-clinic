@@ -2,6 +2,7 @@ package ru.acorn.springpetclinic.springpetclinic.services.springdatajpa;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
+import org.w3c.dom.ls.LSOutput;
 import ru.acorn.springpetclinic.springpetclinic.model.Owner;
 import ru.acorn.springpetclinic.springpetclinic.repositories.OwnerRepository;
 import ru.acorn.springpetclinic.springpetclinic.repositories.PetRepository;
@@ -39,11 +40,13 @@ public class OwnerSDJpaService implements OwnerService {
     @Override
     public Owner findById(Long aLong) {
         return ownerRepository.findById(aLong).orElse(null);
+
     }
 
     @Override
     public Owner save(Owner object) {
         return ownerRepository.save(object);
+
     }
 
     @Override
