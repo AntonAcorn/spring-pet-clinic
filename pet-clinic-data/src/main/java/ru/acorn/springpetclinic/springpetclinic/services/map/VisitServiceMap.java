@@ -1,13 +1,13 @@
 package ru.acorn.springpetclinic.springpetclinic.services.map;
 
-import ru.acorn.springpetclinic.springpetclinic.model.Owner;
+import org.springframework.stereotype.Service;
 import ru.acorn.springpetclinic.springpetclinic.model.Visit;
-import ru.acorn.springpetclinic.springpetclinic.services.OwnerService;
 import ru.acorn.springpetclinic.springpetclinic.services.VisitService;
 
 import java.util.Set;
 
-public class VisitServiceMap  extends AbstractMapService<Visit, Long> implements VisitService {
+@Service
+public class VisitServiceMap  extends AbstractServiceMap<Visit, Long> implements VisitService {
     @Override
     public Set<Visit> findAll() {
         return super.findAll();
