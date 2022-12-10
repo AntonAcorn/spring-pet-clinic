@@ -3,7 +3,6 @@ package ru.acorn.springpetclinic.springpetclinic.services.map;
 import org.springframework.stereotype.Service;
 import ru.acorn.springpetclinic.springpetclinic.model.Owner;
 import ru.acorn.springpetclinic.springpetclinic.model.Pet;
-import ru.acorn.springpetclinic.springpetclinic.model.PetType;
 import ru.acorn.springpetclinic.springpetclinic.services.OwnerService;
 import ru.acorn.springpetclinic.springpetclinic.services.PetService;
 import ru.acorn.springpetclinic.springpetclinic.services.PetTypeService;
