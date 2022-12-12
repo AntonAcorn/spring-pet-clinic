@@ -44,7 +44,14 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-<!--        <dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>8.0.0.Final</version>
+        </dependency>
+
+        <!--        <dependency>-->
 <!--            <groupId>org.projectlombok</groupId>-->
 <!--            <artifactId>lombok</artifactId>-->
 <!--            <optional>true</optional>-->

@@ -10,6 +10,7 @@ import ru.acorn.springpetclinic.springpetclinic.repositories.PetTypeRepository;
 import ru.acorn.springpetclinic.springpetclinic.services.OwnerService;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -59,5 +60,8 @@ public class OwnerSDJpaService implements OwnerService {
         ownerRepository.deleteById(aLong);
     }
 
-
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+        return findAllByLastNameLike(lastName);
+    }
 }
