@@ -1,5 +1,6 @@
 package ru.acorn.springpetclinic.springpetclinic.services.springdatajpa;
 
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import ru.acorn.springpetclinic.springpetclinic.model.PetType;
@@ -9,7 +10,7 @@ import ru.acorn.springpetclinic.springpetclinic.services.PetTypeService;
 import java.util.HashSet;
 import java.util.Set;
 
-@Service
+
 @Profile("springdatajpa")
 public class PetTypeSDJpaService implements PetTypeService {
 

@@ -10,12 +10,19 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
-@Getter @Setter
-@AllArgsConstructor
+
+@Getter
+@Setter
 @NoArgsConstructor
-@MappedSuperclass//не будет создаваться колонка
+@AllArgsConstructor
+@MappedSuperclass
 public class BaseEntity implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    public boolean isNew() {
+        return this.id == null;
+    }
 }

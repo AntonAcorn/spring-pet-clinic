@@ -1,5 +1,6 @@
 package ru.acorn.springpetclinic.springpetclinic.services.springdatajpa;
 
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import ru.acorn.springpetclinic.springpetclinic.model.Visit;
@@ -9,12 +10,14 @@ import ru.acorn.springpetclinic.springpetclinic.services.VisitService;
 import java.util.HashSet;
 import java.util.Set;
 
+
 @Service
 @Profile("springdatajpa")
-public class VisitSdJpaService implements VisitService {
+public class VisitSDJpaService implements VisitService {
+
     private final VisitRepository visitRepository;
 
-    public VisitSdJpaService(VisitRepository visitRepository) {
+    public VisitSDJpaService(VisitRepository visitRepository) {
         this.visitRepository = visitRepository;
     }
 

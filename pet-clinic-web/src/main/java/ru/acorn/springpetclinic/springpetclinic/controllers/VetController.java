@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.acorn.springpetclinic.springpetclinic.services.VetService;
-import ru.acorn.springpetclinic.springpetclinic.services.map.VetServiceMap;
 
 @Controller
 public class VetController {

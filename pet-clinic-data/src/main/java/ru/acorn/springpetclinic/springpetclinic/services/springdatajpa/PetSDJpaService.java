@@ -1,5 +1,6 @@
 package ru.acorn.springpetclinic.springpetclinic.services.springdatajpa;
 
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import ru.acorn.springpetclinic.springpetclinic.model.Pet;
@@ -9,9 +10,13 @@ import ru.acorn.springpetclinic.springpetclinic.services.PetService;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Created by jt on 8/5/18.
+ */
 @Service
 @Profile("springdatajpa")
 public class PetSDJpaService implements PetService {
+
     private final PetRepository petRepository;
 
     public PetSDJpaService(PetRepository petRepository) {
@@ -20,7 +25,7 @@ public class PetSDJpaService implements PetService {
 
     @Override
     public Set<Pet> findAll() {
-        Set <Pet> pets = new HashSet<>();
+        Set<Pet> pets = new HashSet<>();
         petRepository.findAll().forEach(pets::add);
         return pets;
     }

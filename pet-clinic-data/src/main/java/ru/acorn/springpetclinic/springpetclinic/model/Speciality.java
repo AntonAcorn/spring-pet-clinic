@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.*;
 
+
 @Setter
 @Getter
 @NoArgsConstructor
@@ -12,8 +13,9 @@ import lombok.*;
 @Builder
 @Entity
 @Table(name = "specialties")
-public class Specialty extends BaseEntity{
+public class Speciality extends BaseEntity {
 
     @Column(name = "description")
     private String description;
+
 }

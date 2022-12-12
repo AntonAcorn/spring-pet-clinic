@@ -1,9 +1,7 @@
 package ru.acorn.springpetclinic.springpetclinic.repositories;
 
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
-import ru.acorn.springpetclinic.springpetclinic.model.Specialty;
+import ru.acorn.springpetclinic.springpetclinic.model.Speciality;
 
-@Repository
-public interface SpecialtyRepository extends CrudRepository<Specialty, Long> {
+public interface SpecialtyRepository extends CrudRepository<Speciality, Long> {
 }

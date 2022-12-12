@@ -2,31 +2,35 @@ package ru.acorn.springpetclinic.springpetclinic.services.map;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-import ru.acorn.springpetclinic.springpetclinic.model.Specialty;
-import ru.acorn.springpetclinic.springpetclinic.services.SpecialtyService;
+import ru.acorn.springpetclinic.springpetclinic.model.PetType;
+import ru.acorn.springpetclinic.springpetclinic.services.PetTypeService;
 
 import java.util.Set;
 
+/**
+ * Created by jt on 7/29/18.
+ */
 @Service
-@Profile({"default","map"})
-public class SpecialtyServiceMap extends AbstractServiceMap<Specialty, Long> implements SpecialtyService {
+@Profile({"default", "map"})
+public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
+
     @Override
-    public Set<Specialty> findAll() {
+    public Set<PetType> findAll() {
         return super.findAll();
     }
 
     @Override
-    public Specialty findById(Long id) {
+    public PetType findById(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public Specialty save(Specialty object) {
+    public PetType save(PetType object) {
         return super.save(object);
     }
 
     @Override
-    public void delete(Specialty object) {
+    public void delete(PetType object) {
         super.delete(object);
     }
 

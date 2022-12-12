@@ -7,9 +7,11 @@ import ru.acorn.springpetclinic.springpetclinic.services.VisitService;
 
 import java.util.Set;
 
+
 @Service
-@Profile({"default","map"})
-public class VisitServiceMap  extends AbstractServiceMap<Visit, Long> implements VisitService {
+@Profile({"default", "map"})
+public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
+
     @Override
     public Set<Visit> findAll() {
         return super.findAll();
@@ -22,9 +24,12 @@ public class VisitServiceMap  extends AbstractServiceMap<Visit, Long> implements
 
     @Override
     public Visit save(Visit visit) {
-        if(visit.getPet() == null || visit.getPet().getOwner() == null || visit.getPet().getId() == null){
-            throw new RuntimeException("Invalid visit");
+
+        if(visit.getPet() == null || visit.getPet().getOwner() == null || visit.getPet().getId() == null
+            || visit.getPet().getOwner().getId() == null){
+            throw new RuntimeException("Invalid Visit");
         }
+
         return super.save(visit);
     }
 
